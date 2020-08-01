@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="styles/navbar.css"><nav class="navbar" id="js-nav">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <a href="/" class="logo white">Dark<span class="violet">.ly</a></span>
+    <ul class="main-nav"  id="js-menu">
+        <li><a class="nav-links" href="/">Home</a></li>
+        <li><a class="nav-links"  href="/">News</a></li>    
+        <li><a class="nav-links"  href="/profile.php">Login</a>
+        </li>
+    </ul>
+    <span class="navbar-toggle" id="js-navbar-toggle" >
+        <i class="fas fa-bars"></i>
+    </span>
+</nav>
+    <script  type="text/javascript">
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+        
+        navBarToggle.addEventListener('click', function () {
+            
+            mainNav.classList.toggle('active');
+        });</script>
+    <script  type="text/javascript">
+        let parentNav = document.getElementById('js-nav');
+        let navBarTog = document.getElementById('js-navbar-toggle');
+        
+        navBarTog.addEventListener('click', function () {
+            
+            parentNav.classList.toggle('clicked');
+        });</script>    
+    
+        
